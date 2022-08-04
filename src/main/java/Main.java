@@ -19,7 +19,10 @@ class Main {
         System.out.println("Leaves: "+countLeafNodes(node8));
     }
     private static int getNumberOfNodes(Node node) {
-        if(node.isLeaf()){
+        if(node == null){
+            return 0;
+        }
+        else if(node.isLeaf()){
             return 1;
         }
         else{
@@ -28,7 +31,10 @@ class Main {
     }
 
     public static int countLeafNodes(Node node) {
-        if(node.isLeaf()){
+        if(node == null){
+            return 0;
+        }
+        else if(node.isLeaf()){
             return 1;
         }
         else{
